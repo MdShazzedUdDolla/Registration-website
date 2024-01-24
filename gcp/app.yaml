@@ -1,0 +1,15 @@
+runtime: php55
+runtime_config:
+  document_root: C:\Users\shazz\OneDrive - University of Prince Edward Island\Desktop\Md_Shazzed_Ud_Dolla
+handlers:
+- url: /(.+\.php)$
+  script: /\1
+
+- url: /.*
+  script: reg.php
+
+env_variables:
+  MYSQL_HOST: /cloudsql/md-shazzed-ud-dolla:us-central1:mdshazzed
+  MYSQL_DB: usk
+  MYSQL_USER: mdshazzed
+  MYSQL_PASS: 1234
